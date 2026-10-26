@@ -740,3 +740,19 @@ header .intro-text {
 	padding: 10px 100px 20px 20px;
 }
 }
+
+/* Contacto: enlaces de correo y teléfono */
+#contact .contact-item a {
+	color: inherit;
+	border-bottom: 1px dotted currentColor;
+}
+#contact .contact-item a:hover {
+	color: #7bc3d1;
+}
+#contact .contact-cta {
+	margin: 30px 0 10px;
+}
+#contact .contact-cta i.fa {
+	font-size: inherit;
+	margin-right: 8px;
+}

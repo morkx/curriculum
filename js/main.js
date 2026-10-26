@@ -1,100 +1,61 @@
+(function ($) {
+  'use strict';
 
-function main() {
+  // Scroll suave al hacer clic en los enlaces del menú
+  $('a.page-scroll').on('click', function () {
+    var target = $(this.hash);
+    if (target.length) {
+      $('html, body').animate({ scrollTop: target.offset().top - 40 }, 900);
+      return false;
+    }
+  });
 
-(function () {
-   'use strict';
-   
-  	$('a.page-scroll').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top - 40
-            }, 900);
-            return false;
-          }
-        }
-      });
+  // Fija la barra de navegación al pasar el encabezado
+  $('#nav').affix({
+    offset: { top: function () { return $('header').outerHeight(); } }
+  });
 
-	// affix the navbar after scroll below header
-$('#nav').affix({
-      offset: {
-        top: $('header').height()
+  // Cierra el menú en móvil después de elegir una sección
+  $('.navbar-main-collapse a').on('click', function () {
+    $('.navbar-main-collapse.in').collapse('hide');
+  });
+
+  // Gráficos de habilidades: se animan una sola vez, al quedar visibles
+  var $charts = $('.chart');
+  function startCharts() {
+    $charts.easyPieChart({
+      onStep: function (from, to, percent) {
+        $(this.el).find('.percent').text(Math.round(percent));
       }
-});	
-
-	// skills chart
-	$(document).ready(function(e) {
-	//var windowBottom = $(window).height();
-	var index=0;
-	$(document).scroll(function(){
-		var top = $('#skills').height()-$(window).scrollTop();
-		console.log(top)
-		if(top<-300){
-			if(index==0){	
-			
-				$('.chart').easyPieChart({
-					easing: 'easeOutBounce',
-					onStep: function(from, to, percent) {
-						$(this.el).find('.percent').text(Math.round(percent));
-					}
-				});
-			
-				}
-			index++;
-		}
-	})
-	//console.log(nagativeValue)
-	});
-
-
-  	// Portfolio isotope filter
-    $(window).load(function() {
-        var $container = $('.portfolio-items');
-        $container.isotope({
-            filter: '*',
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-        });
-        $('.cat a').click(function() {
-            $('.cat .active').removeClass('active');
-            $(this).addClass('active');
-            var selector = $(this).attr('data-filter');
-            $container.isotope({
-                filter: selector,
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear',
-                    queue: false
-                }
-            });
-            return false;
-        });
-
     });
-	
-	  	
-    // CounterUp
-	$(document).ready(function( $ ) {
-		if($("span.count").length > 0){	
-			$('span.count').counterUp({
-					delay: 10, // the delay time in ms
-			time: 1500 // the speed time in ms
-			});
-		}
-	});
-	
-  	// Pretty Photo
-	$("a[rel^='prettyPhoto']").prettyPhoto({
-		social_tools: false
-	});	
+  }
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      if (entries.some(function (e) { return e.isIntersecting; })) {
+        startCharts();
+        observer.disconnect();
+      }
+    }, { threshold: 0.3 });
+    observer.observe(document.getElementById('skills'));
+  } else {
+    startCharts();
+  }
 
-}());
+  // Filtro de proyectos
+  $(window).on('load', function () {
+    var $container = $('.portfolio-items');
+    var options = {
+      animationOptions: { duration: 750, easing: 'linear', queue: false }
+    };
+    $container.isotope($.extend({ filter: '*' }, options));
+    $('.cat a').on('click', function () {
+      $('.cat .active').removeClass('active');
+      $(this).addClass('active');
+      $container.isotope($.extend({ filter: $(this).attr('data-filter') }, options));
+      return false;
+    });
+  });
 
-
-}
-main();
+  // Año actual en el pie de página
+  $('#year').text(new Date().getFullYear());
+}(jQuery));
