@@ -8,8 +8,9 @@ Sitio personal con mi curriculum: perfil, habilidades, proyectos, experiencia y 
 
 - `index.html`: todo el contenido del sitio.
 - `css/style.css`: estilos propios (sobre Bootstrap 3).
-- `js/main.js`: menú, animación de habilidades y filtro de proyectos.
-- `img/`: foto de perfil, fondo y capturas de proyectos.
+- `js/main.js`: menú y navegación.
+- `img/about.jpg`: foto de perfil.
+- `files/svalenzuela_CV_2026.pdf`: CV descargable.
 
 ## Ver en local
 
