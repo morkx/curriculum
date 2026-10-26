@@ -7,12 +7,9 @@
   // Fecha y año
   var now = new Date();
   $('#year').textContent = now.getFullYear();
-  $('#now').textContent = now.toLocaleString('es-UY', {
-    weekday: 'short', day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit'
-  });
 
   // Atajos de teclado: 1-6 para ir a cada sección, "/" para la consola
-  var sections = ['perfil', 'habilidades', 'experiencia', 'formacion', 'proyectos', 'contacto'];
+  var sections = ['perfil', 'experiencia', 'formacion', 'habilidades', 'proyectos', 'contacto'];
   var input = $('#term-in');
   document.addEventListener('keydown', function (e) {
     if (e.ctrlKey || e.metaKey || e.altKey) return;
@@ -50,7 +47,7 @@
     out.appendChild(el);
   }
 
-  // Copia la salida de una sección de la página dentro de la consola
+  // Copia el contenido de una sección de la página dentro de la consola
   function section(id) {
     var wrap = document.createElement('div');
     wrap.className = 'out';
@@ -82,8 +79,8 @@
       pre([
         'comandos disponibles:',
         '  whoami       perfil profesional',
-        '  skills       habilidades técnicas (salida de R)',
-        '  exp          experiencia laboral (sacct)',
+        '  skills       habilidades técnicas',
+        '  exp          experiencia laboral',
         '  edu          formación académica',
         '  proyectos    proyectos y publicaciones',
         '  contacto     datos de contacto',

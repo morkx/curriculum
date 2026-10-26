@@ -3,12 +3,12 @@
 	--bg: #0b0e0b;
 	--panel: #0f140f;
 	--fg: #c9d4c5;
-	--dim: #75836f;
+	--dim: #8b9986;
 	--green: #87d68d;
 	--amber: #e3b65c;
 	--line: #263026;
 	--link: #9fd4e0;
-	--max: 860px;
+	--max: 760px;
 }
 
 * { box-sizing: border-box; }
@@ -22,18 +22,8 @@ body {
 	margin: 0;
 	background: var(--bg);
 	color: var(--fg);
-	font: 15px/1.6 "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+	font: 16px/1.75 "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 	-webkit-font-smoothing: antialiased;
-}
-
-/* Líneas de barrido muy sutiles, como un monitor CRT */
-body::before {
-	content: "";
-	position: fixed;
-	inset: 0;
-	pointer-events: none;
-	background: repeating-linear-gradient(to bottom, rgba(255,255,255,0.018) 0 1px, transparent 1px 3px);
-	z-index: 10;
 }
 
 ::selection { background: var(--green); color: var(--bg); }
@@ -98,7 +88,6 @@ h1 {
 
 /* Menú */
 .menu { margin-bottom: 40px; }
-.menu p { overflow: hidden; white-space: nowrap; margin-bottom: 8px; }
 .menu ul { display: flex; flex-wrap: wrap; gap: 6px 22px; }
 .menu a { border: none; color: var(--fg); padding: 1px 4px 1px 0; }
 .menu a:hover, .menu a:focus-visible { background: var(--green); color: var(--bg); }
@@ -120,40 +109,29 @@ h2 {
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
 }
-h2 .num { color: var(--dim); margin-right: 6px; }
-h3 { margin: 0; font-size: 15px; font-weight: 600; color: var(--fg); }
-h3 .dim { font-weight: 400; }
+h3 { margin: 0; font-size: 16px; font-weight: 600; color: var(--fg); }
 
 .prompt { margin: 0 0 6px; color: var(--fg); overflow-wrap: anywhere; }
 .ps1 { color: var(--green); font-weight: 600; margin-right: 6px; }
-.out { margin: 0 0 18px; padding-left: 2ch; }
-pre.out { white-space: pre; overflow-x: auto; font: inherit; }
+.out { margin: 0 0 18px; }
 
-/* Salida de R */
-.rlist p { margin: 0; }
-.rlist .key { color: var(--amber); margin-top: 8px; }
-.rlist .idx { color: var(--dim); }
-.rlist q { quotes: "\"" "\""; color: var(--fg); margin-right: 1ch; display: inline-block; }
-.rlist q::before, .rlist q::after { color: var(--dim); }
+/* Experiencia y formación */
+.item { margin-bottom: 22px; }
+.item p { margin: 0; }
+.when { color: var(--green); font-size: 14px; }
+.where { color: var(--dim); }
+.item ul { margin: 6px 0 0; }
+.item li { position: relative; padding-left: 2ch; margin-bottom: 2px; }
+.item li::before { content: "-"; position: absolute; left: 0; color: var(--dim); }
 
-/* Tablas tipo sacct / ls */
-.table-wrap { overflow-x: auto; }
-table { border-collapse: collapse; }
-th, td { text-align: left; vertical-align: top; padding: 0 2.5ch 2px 0; }
-.sacct { white-space: nowrap; }
-.sacct thead th { color: var(--dim); font-weight: 400; border-bottom: 1px dashed var(--line); }
-.sacct td:first-child { color: var(--dim); }
-.done { color: var(--dim); }
-.run { color: var(--green); }
-.ls td:nth-child(-n+3) { white-space: nowrap; }
-.kv th { color: var(--dim); font-weight: 400; }
+/* Habilidades */
+.skills { margin: 0; }
+.skills dt { color: var(--green); }
+.skills dd { margin: 0 0 12px; }
 
-/* Detalle de cada trabajo */
-.jobs article { margin-bottom: 18px; padding-left: 12px; border-left: 2px solid var(--line); }
-.jobs article p { margin: 0 0 4px; }
-.jobs li, .links li { position: relative; padding-left: 2ch; margin-bottom: 4px; }
-.jobs li::before, .links li::before { content: "-"; position: absolute; left: 0; color: var(--dim); }
-.links li::before { content: ">"; color: var(--green); }
+/* Listas simples */
+.plain li { margin-bottom: 8px; }
+.contact { display: flex; flex-wrap: wrap; gap: 4px 28px; }
 
 /* Consola interactiva */
 .term {
@@ -192,11 +170,9 @@ th, td { text-align: left; vertical-align: top; padding: 0 2.5ch 2px 0; }
 }
 
 @media (max-width: 600px) {
-	body { font-size: 14px; }
+	body { font-size: 15px; }
 	.banner { padding: 14px 14px 6px; }
 	.banner-top { margin: -14px -14px 14px; padding: 2px 14px; }
-	.out { padding-left: 0; }
 	.banner-body { gap: 14px; align-items: flex-start; }
 	.avatar { width: 72px; }
-	.ls td:nth-child(4) { white-space: normal; min-width: 22ch; }
 }

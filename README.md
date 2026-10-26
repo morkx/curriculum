@@ -1,7 +1,7 @@
 # Curriculum · Sebastián Valenzuela
 
-Curriculum personal con estética de terminal / BBS: cada sección es un comando
-con su salida (R, `sacct`, `ls`, `cat`) y al final hay una consola interactiva.
+Curriculum personal con estética de terminal / BBS, simple y fácil de leer,
+con una consola interactiva al final.
 
 **Ver en línea:** https://morkx.github.io/curriculum/
 
