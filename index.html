@@ -6,6 +6,8 @@
 <title>Sebastián Valenzuela · Bioinformática, HPC y DevOps</title>
 <meta name="description" content="Curriculum de Sebastián Valenzuela: especialista en Bioinformática con experiencia en computación de alto rendimiento (HPC), DevOps y docencia. Montevideo, Uruguay.">
 <meta name="author" content="Sebastián Valenzuela">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0e0b">
 
 <!-- Open Graph (vista previa al compartir el enlace) -->
 <meta property="og:type" content="profile">
@@ -14,366 +16,208 @@
 <meta property="og:url" content="https://morkx.github.io/curriculum/">
 <meta property="og:image" content="https://morkx.github.io/curriculum/img/about.jpg">
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet" type="text/css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230b0e0b'/%3E%3Ctext x='2' y='12' font-family='monospace' font-size='11' fill='%2387d68d'%3E%3E_%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="60">
+<body>
+<a class="skip" href="#consola">Ir a la consola</a>
 
-<!-- Header -->
-<header id="header">
-  <div class="intro">
-    <div class="container">
-      <div class="row">
-        <div class="intro-text">
-          <h1>Hola, soy <span class="name">Sebastián Valenzuela</span></h1>
-          <p>Especialista en Bioinformática · HPC y DevOps · Docente</p>
-          <a href="#about" class="btn btn-default btn-lg page-scroll">Conocer más</a> </div>
-      </div>
-    </div>
+<div class="screen">
+
+<!-- Cabecera estilo BBS -->
+<header class="banner">
+  <div class="banner-top">
+    <span>SVALENZUELA·BBS</span>
+    <span>nodo 1/1 · 9600 baudios</span>
   </div>
+  <h1>Sebastián Valenzuela</h1>
+  <p class="tagline">Bioinformática · HPC · DevOps · Docencia</p>
+  <p class="dim">Conectado desde Montevideo, Uruguay. Último acceso: <span id="now">2026</span></p>
 </header>
 
-<!-- Navigation -->
-<div id="nav">
-  <nav class="navbar navbar-custom" aria-label="Navegación principal">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse" aria-label="Abrir menú"> <i class="fa fa-bars" aria-hidden="true"></i> </button>
-        <a class="navbar-brand page-scroll" href="#page-top">S. Valenzuela</a> </div>
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <!-- Item oculto para quitar el estado activo al volver arriba -->
-          <li class="hidden"> <a href="#page-top"></a> </li>
-          <li> <a class="page-scroll" href="#about">Sobre mí</a> </li>
-          <li> <a class="page-scroll" href="#skills">Habilidades</a> </li>
-          <li> <a class="page-scroll" href="#resume">Trayectoria</a> </li>
-          <li> <a class="page-scroll" href="#portfolio">Proyectos</a> </li>
-          <li> <a class="page-scroll" href="#contact">Contacto</a> </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
+<!-- Menú principal -->
+<nav class="menu" aria-label="Menú principal">
+  <p class="dim">── MENÚ PRINCIPAL ──────────────────────────────</p>
+  <ul>
+    <li><a href="#perfil"><kbd>1</kbd> Perfil</a></li>
+    <li><a href="#habilidades"><kbd>2</kbd> Habilidades</a></li>
+    <li><a href="#experiencia"><kbd>3</kbd> Experiencia</a></li>
+    <li><a href="#formacion"><kbd>4</kbd> Formación</a></li>
+    <li><a href="#proyectos"><kbd>5</kbd> Proyectos</a></li>
+    <li><a href="#contacto"><kbd>6</kbd> Contacto</a></li>
+    <li><a href="#consola"><kbd>/</kbd> Consola</a></li>
+  </ul>
+</nav>
 
 <main>
-<!-- About Section -->
-<section id="about">
-  <div class="container">
-    <div class="section-title text-center center">
-      <h2>Sobre mí</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive" alt="Foto de Sebastián Valenzuela" width="200" height="200"></div>
-      <div class="col-md-8 col-md-offset-2">
-        <div class="about-text">
-          <p>Soy especialista en Bioinformática, con sólida experiencia en computación de alto rendimiento (HPC) y DevOps. Trabajo en el análisis de datos de secuenciación (NGS), el modelado molecular y la optimización de pipelines bioinformáticos en entornos de clúster.</p>
-          <p>Combino ese perfil técnico con una larga trayectoria docente: soy profesor de Matemática en UTU desde 2003 y, desde 2017, dicto Bioinformática II en la Facultad de Ingeniería de la Universidad ORT Uruguay.</p>
-          <ul class="languages">
-            <li><strong>Español:</strong> nativo</li>
-            <li><strong>Inglés:</strong> avanzado (lectura y escritura técnica)</li>
-          </ul>
-          <p class="text-center">
-            <a class="btn btn-primary" href="files/svalenzuela_CV_2026.pdf" download><i class="fa fa-download" aria-hidden="true"></i> Descargar CV (PDF)</a>
-            <a class="btn btn-primary" href="https://uy.linkedin.com/in/sebastian-valenzuela-mart%C3%ADnez-1323291a" target="_blank" rel="noopener"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-          </p>
-        </div>
-      </div>
-    </div>
+
+<!-- 1 · Perfil -->
+<section id="perfil" data-cmd="whoami">
+  <h2><span class="num">[1]</span> Perfil</h2>
+  <p class="prompt"><span class="ps1">sebastian@mvd:~$</span> whoami</p>
+  <div class="out">
+    <p>Especialista en Bioinformática con experiencia en computación de alto rendimiento (HPC) y DevOps. Trabajo en el análisis de datos de secuenciación (NGS), el modelado molecular y la optimización de pipelines bioinformáticos en entornos de clúster.</p>
+    <p>Combino ese perfil técnico con una larga trayectoria docente: soy profesor de Matemática en UTU desde 2003 y, desde 2017, dicto Bioinformática II en la Facultad de Ingeniería de la Universidad ORT Uruguay.</p>
+    <p class="dim">idiomas: español (nativo) · inglés (avanzado, lectura y escritura técnica)</p>
   </div>
 </section>
 
-<!-- Skills Section -->
-<section id="skills" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Habilidades técnicas</h2>
-      <hr>
-    </div>
-    <div class="row skill-groups">
-      <div class="col-md-3 col-sm-6">
-        <div class="skill-group">
-          <i class="fa fa-flask fa-2x" aria-hidden="true"></i>
-          <h4>Bioinformática</h4>
-          <ul class="tags">
-            <li>Análisis NGS (transcriptómica)</li>
-            <li>Modelado molecular</li>
-            <li>NCBI</li>
-            <li>PDB</li>
-            <li>VMD</li>
-            <li>BLAST</li>
-            <li>Samtools</li>
-            <li>R (Bioconductor)</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="skill-group">
-          <i class="fa fa-code fa-2x" aria-hidden="true"></i>
-          <h4>Lenguajes</h4>
-          <ul class="tags">
-            <li>Python</li>
-            <li>R</li>
-            <li>Bash</li>
-            <li>SQL</li>
-            <li>Perl</li>
-            <li>PHP</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-      </div>
-      <div class="clearfix visible-sm-block"></div>
-      <div class="col-md-3 col-sm-6">
-        <div class="skill-group">
-          <i class="fa fa-server fa-2x" aria-hidden="true"></i>
-          <h4>DevOps y HPC</h4>
-          <ul class="tags">
-            <li>GNU/Linux</li>
-            <li>SLURM</li>
-            <li>Git</li>
-            <li>Docker</li>
-            <li>Singularity</li>
-            <li>KVM</li>
-            <li>MPI</li>
-            <li>OpenMP</li>
-            <li>CUDA</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="skill-group">
-          <i class="fa fa-database fa-2x" aria-hidden="true"></i>
-          <h4>Bases de datos</h4>
-          <ul class="tags">
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+<!-- 2 · Habilidades, como salida de R -->
+<section id="habilidades" data-cmd="skills">
+  <h2><span class="num">[2]</span> Habilidades técnicas</h2>
+  <p class="prompt"><span class="ps1">R&gt;</span> skills &lt;- read.csv("habilidades.csv")</p>
+  <p class="prompt"><span class="ps1">R&gt;</span> table(skills$area)</p>
+<pre class="out">
+ Bases de datos   Bioinformática   DevOps y HPC     Lenguajes
+              2                8              9            7
+</pre>
+  <p class="prompt"><span class="ps1">R&gt;</span> split(skills$herramienta, skills$area)</p>
+  <div class="out rlist">
+    <p class="key">$Bioinformática</p>
+    <p><span class="idx">[1]</span> <q>Análisis NGS (transcriptómica)</q> <q>Modelado molecular</q> <q>NCBI</q> <q>PDB</q> <q>VMD</q> <q>BLAST</q> <q>Samtools</q> <q>R (Bioconductor)</q></p>
+    <p class="key">$Lenguajes</p>
+    <p><span class="idx">[1]</span> <q>Python</q> <q>R</q> <q>Bash</q> <q>SQL</q> <q>Perl</q> <q>PHP</q> <q>JavaScript</q></p>
+    <p class="key">$`DevOps y HPC`</p>
+    <p><span class="idx">[1]</span> <q>GNU/Linux</q> <q>SLURM</q> <q>Git</q> <q>Docker</q> <q>Singularity</q> <q>KVM</q> <q>MPI</q> <q>OpenMP</q> <q>CUDA</q></p>
+    <p class="key">$`Bases de datos`</p>
+    <p><span class="idx">[1]</span> <q>MySQL</q> <q>PostgreSQL</q></p>
   </div>
 </section>
 
-<!-- Resume Section -->
-<section id="resume" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Experiencia</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="timeline">
-          <li>
-            <div class="timeline-image">
-              <h4>2018<br>
-                –<br>
-                2026</h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Cluster-uy</h4>
-                <h4 class="subheading">Ingeniero DevOps y Soporte HPC</h4>
-                <p class="dates">2018 – junio de 2026</p>
-              </div>
-              <div class="timeline-body">
-                <ul>
-                  <li>Soporte y optimización de software y pipelines de bioinformática (GROMACS, BLAST, Samtools) en entorno HPC.</li>
-                  <li>Automatización de la administración y el monitoreo con scripts en Python y Bash.</li>
-                  <li>Gestión del scheduler de recursos (SLURM) y compilación de software científico en GNU/Linux.</li>
-                  <li>Administración de contenedores (Singularity, Docker) y virtualización (KVM) para asegurar la reproducibilidad de los análisis.</li>
-                  <li>Apoyo a investigadores en programación paralela (MPI, OpenMP, CUDA).</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <h4>2017<br>
-                –<br>
-                hoy</h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Universidad ORT Uruguay, Facultad de Ingeniería</h4>
-                <h4 class="subheading">Docente de Bioinformática II</h4>
-              </div>
-              <div class="timeline-body">
-                <ul>
-                  <li>Diseño y dictado de la asignatura: modelado de proteínas, análisis de datos de secuenciación (transcriptómica) y bases de datos biológicas (NCBI, PDB).</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image">
-              <h4>2016<br>
-                –<br>
-                2022</h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Facultad de Ingeniería, Udelar</h4>
-                <h4 class="subheading">Asistente de la Unidad de Posgrados</h4>
-              </div>
-              <div class="timeline-body">
-                <ul>
-                  <li>Desarrollo de un dashboard interactivo con R y Shiny para visualizar datos académicos y estadísticos.</li>
-                  <li>Administración de plataformas web y difusión de eventos.</li>
-                  <li>Coautoría de una publicación en el libro <em>Smart Cities</em>.</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <h4>2003<br>
-                –<br>
-                hoy</h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Universidad del Trabajo del Uruguay (UTU)</h4>
-                <h4 class="subheading">Docente de Matemática</h4>
-              </div>
-              <div class="timeline-body">
-                <ul>
-                  <li>Profesor de Matemática en la Dirección General de Educación Técnico Profesional.</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+<!-- 3 · Experiencia, como trabajos de SLURM -->
+<section id="experiencia" data-cmd="exp">
+  <h2><span class="num">[3]</span> Experiencia</h2>
+  <p class="prompt"><span class="ps1">sebastian@mvd:~$</span> sacct --user=svalenzuela --format=JobID,Inicio,Fin,Estado,Cargo</p>
+  <div class="out table-wrap">
+    <table class="sacct">
+      <thead>
+        <tr><th>JobID</th><th>Inicio</th><th>Fin</th><th>Estado</th><th>Cargo</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>2018</td><td>2026-06</td><td class="done">COMPLETED</td><td>Ingeniero DevOps y Soporte HPC @ Cluster-uy</td></tr>
+        <tr><td>2</td><td>2017</td><td>—</td><td class="run">RUNNING</td><td>Docente de Bioinformática II @ Universidad ORT</td></tr>
+        <tr><td>3</td><td>2016-03</td><td>2022-10</td><td class="done">COMPLETED</td><td>Asistente, Unidad de Posgrados @ FING, Udelar</td></tr>
+        <tr><td>4</td><td>2003</td><td>—</td><td class="run">RUNNING</td><td>Docente de Matemática @ UTU</td></tr>
+      </tbody>
+    </table>
   </div>
-  <div class="container">
-    <div class="section-title center">
-      <h2>Formación</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="timeline">
-          <li>
-            <div class="timeline-image">
-              <h4>2012<br>
-                –<br>
-                2015</h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Universidad de la República, Facultad de Ciencias</h4>
-                <h4 class="subheading">Maestría en Bioinformática</h4>
-              </div>
-              <div class="timeline-body">
-                <p>Plan de estudios completo.</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <h4>1999<br>
-                –<br>
-                2011</h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Universidad de la República, Facultad de Ciencias</h4>
-                <h4 class="subheading">Licenciatura en Ciencias Biológicas</h4>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+
+  <p class="prompt"><span class="ps1">sebastian@mvd:~$</span> scontrol show job 1 2 3 4</p>
+  <div class="out jobs">
+    <article>
+      <h3>JobId=1 <span class="dim">Cluster-uy, Montevideo · 2018 – junio de 2026</span></h3>
+      <p class="dim">Cargo=Ingeniero DevOps y Soporte HPC</p>
+      <ul>
+        <li>Soporte y optimización de software y pipelines de bioinformática (GROMACS, BLAST, Samtools) en entorno HPC.</li>
+        <li>Automatización de la administración y el monitoreo con scripts en Python y Bash.</li>
+        <li>Gestión del scheduler de recursos (SLURM) y compilación de software científico en GNU/Linux.</li>
+        <li>Administración de contenedores (Singularity, Docker) y virtualización (KVM) para asegurar la reproducibilidad de los análisis.</li>
+        <li>Apoyo a investigadores en programación paralela (MPI, OpenMP, CUDA).</li>
+      </ul>
+    </article>
+    <article>
+      <h3>JobId=2 <span class="dim">Universidad ORT Uruguay, Facultad de Ingeniería · 2017 – hoy</span></h3>
+      <p class="dim">Cargo=Docente de Bioinformática II</p>
+      <ul>
+        <li>Diseño y dictado de la asignatura: modelado de proteínas, análisis de datos de secuenciación (transcriptómica) y bases de datos biológicas (NCBI, PDB).</li>
+      </ul>
+    </article>
+    <article>
+      <h3>JobId=3 <span class="dim">Facultad de Ingeniería, Udelar · marzo 2016 – octubre 2022</span></h3>
+      <p class="dim">Cargo=Asistente de la Unidad de Posgrados</p>
+      <ul>
+        <li>Desarrollo de un dashboard interactivo con R y Shiny para visualizar datos académicos y estadísticos.</li>
+        <li>Administración de plataformas web y difusión de eventos.</li>
+        <li>Coautoría de una publicación en el libro <cite>Smart Cities</cite>.</li>
+      </ul>
+    </article>
+    <article>
+      <h3>JobId=4 <span class="dim">Universidad del Trabajo del Uruguay (UTU) · 2003 – hoy</span></h3>
+      <p class="dim">Cargo=Docente de Matemática</p>
+      <ul>
+        <li>Profesor de Matemática en la Dirección General de Educación Técnico Profesional.</li>
+      </ul>
+    </article>
   </div>
 </section>
 
-<!-- Projects Section -->
-<section id="portfolio">
-  <div class="container">
-    <div class="section-title text-center center">
-      <h2>Proyectos</h2>
-      <hr>
-    </div>
-    <div class="row projects">
-      <div class="col-md-4 col-sm-6">
-        <div class="project">
-          <i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>
-          <h4>Dashboard de datos académicos</h4>
-          <p>Dashboard interactivo en R y Shiny para visualizar datos académicos y estadísticos de la Unidad de Posgrados (Facultad de Ingeniería, Udelar).</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="project">
-          <i class="fa fa-book fa-2x" aria-hidden="true"></i>
-          <h4>Libro <em>Smart Cities</em></h4>
-          <p>Coautor de una publicación incluida en el libro <em>Smart Cities</em>.</p>
-        </div>
-      </div>
-      <div class="clearfix visible-sm-block"></div>
-      <div class="col-md-4 col-sm-6">
-        <div class="project">
-          <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
-          <h4>Sitios web de eventos y cursos</h4>
-          <ul>
-            <li><a href="https://www.fing.edu.uy/eventos/mitesisen180/" target="_blank" rel="noopener">Mi tesis en 180</a></li>
-            <li><a href="https://www.fing.edu.uy/eventos/jornadapos/" target="_blank" rel="noopener">Jornada de difusión de posgrados</a></li>
-            <li><a href="https://www.fing.edu.uy/proyectos/diego/" target="_blank" rel="noopener">Proyecto DIEGO</a></li>
-            <li><a href="http://carla2017.ccarla.org/" target="_blank" rel="noopener">Conferencia CARLA 2017</a></li>
-            <li><a href="https://www.fing.edu.uy/inco/grupos/cecal/hpc/desimul/#main.md" target="_blank" rel="noopener">Curso de simulación (CeCal)</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+<!-- 4 · Formación -->
+<section id="formacion" data-cmd="edu">
+  <h2><span class="num">[4]</span> Formación</h2>
+  <p class="prompt"><span class="ps1">sebastian@mvd:~$</span> ls -l ~/formacion</p>
+  <div class="out table-wrap">
+    <table class="ls">
+      <tbody>
+        <tr><td class="dim">drwxr-xr-x</td><td>2012–2015</td><td><strong>maestria_bioinformatica/</strong></td><td class="dim">Maestría en Bioinformática (plan de estudios completo) · Udelar, Facultad de Ciencias</td></tr>
+        <tr><td class="dim">drwxr-xr-x</td><td>1999–2011</td><td><strong>licenciatura_biologia/</strong></td><td class="dim">Licenciatura en Ciencias Biológicas · Udelar, Facultad de Ciencias</td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Contacto</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="col-sm-6 contact-item"> <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-          <p>Montevideo, Uruguay</p>
-        </div>
-        <div class="col-sm-6 contact-item"> <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-          <p><a href="mailto:sebadarva@gmail.com">sebadarva@gmail.com</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <p class="contact-cta"><a class="btn btn-default" href="mailto:sebadarva@gmail.com?subject=Contacto%20desde%20tu%20curriculum"><i class="fa fa-paper-plane" aria-hidden="true"></i> Escribime un correo</a></p>
-        <div class="social">
-          <ul>
-            <li><a href="https://uy.linkedin.com/in/sebastian-valenzuela-mart%C3%ADnez-1323291a" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a href="https://github.com/morkx" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+<!-- 5 · Proyectos -->
+<section id="proyectos" data-cmd="proyectos">
+  <h2><span class="num">[5]</span> Proyectos</h2>
+  <p class="prompt"><span class="ps1">sebastian@mvd:~$</span> cat ~/proyectos/*.md</p>
+  <div class="out">
+    <p><strong># Dashboard de datos académicos</strong></p>
+    <p>Dashboard interactivo en R y Shiny para visualizar datos académicos y estadísticos de la Unidad de Posgrados (Facultad de Ingeniería, Udelar).</p>
+    <p><strong># Libro <cite>Smart Cities</cite></strong></p>
+    <p>Coautor de una publicación incluida en el libro.</p>
+    <p><strong># Sitios web de eventos y cursos</strong></p>
+    <ul class="links">
+      <li><a href="https://www.fing.edu.uy/eventos/mitesisen180/" target="_blank" rel="noopener">Mi tesis en 180</a></li>
+      <li><a href="https://www.fing.edu.uy/eventos/jornadapos/" target="_blank" rel="noopener">Jornada de difusión de posgrados</a></li>
+      <li><a href="https://www.fing.edu.uy/proyectos/diego/" target="_blank" rel="noopener">Proyecto DIEGO</a></li>
+      <li><a href="http://carla2017.ccarla.org/" target="_blank" rel="noopener">Conferencia CARLA 2017</a></li>
+      <li><a href="https://www.fing.edu.uy/inco/grupos/cecal/hpc/desimul/#main.md" target="_blank" rel="noopener">Curso de simulación (CeCal)</a></li>
+    </ul>
   </div>
 </section>
+
+<!-- 6 · Contacto -->
+<section id="contacto" data-cmd="contacto">
+  <h2><span class="num">[6]</span> Contacto</h2>
+  <p class="prompt"><span class="ps1">sebastian@mvd:~$</span> cat contacto.txt</p>
+  <div class="out table-wrap">
+    <table class="kv">
+      <tbody>
+        <tr><th>ubicación</th><td>Montevideo, Uruguay</td></tr>
+        <tr><th>correo</th><td><a href="mailto:sebadarva@gmail.com">sebadarva@gmail.com</a></td></tr>
+        <tr><th>linkedin</th><td><a href="https://uy.linkedin.com/in/sebastian-valenzuela-mart%C3%ADnez-1323291a" target="_blank" rel="noopener">sebastian-valenzuela-martínez</a></td></tr>
+        <tr><th>github</th><td><a href="https://github.com/morkx" target="_blank" rel="noopener">morkx</a></td></tr>
+        <tr><th>cv</th><td><a href="files/svalenzuela_CV_2026.pdf" download>svalenzuela_CV_2026.pdf</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Consola interactiva -->
+<section id="consola" aria-labelledby="consola-titulo">
+  <h2 id="consola-titulo"><span class="num">[/]</span> Consola</h2>
+  <p class="dim">Escribí <code>help</code> para ver los comandos disponibles.</p>
+  <div class="term" id="term">
+    <div id="term-out" aria-live="polite"></div>
+    <form id="term-form" class="prompt" autocomplete="off">
+      <label for="term-in" class="ps1">sebastian@mvd:~$</label>
+      <input id="term-in" type="text" spellcheck="false" autocapitalize="off" aria-label="Comando">
+    </form>
+  </div>
+  <noscript><p class="dim">La consola necesita JavaScript. El resto del CV se lee sin él.</p></noscript>
+</section>
+
 </main>
 
-<footer id="footer">
-  <div class="container text-center">
-    <div class="fnav">
-      <p>&copy; <span id="year">2026</span> Sebastián Valenzuela. Diseño basado en una plantilla de <a href="http://www.templatewire.com" rel="nofollow noopener" target="_blank">TemplateWire</a>.</p>
-    </div>
-  </div>
+<footer class="status">
+  <span>&copy; <span id="year">2026</span> Sebastián Valenzuela</span>
+  <span class="dim">1-6 navegar · / consola · <a href="https://github.com/morkx/curriculum">código fuente</a></span>
 </footer>
 
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
