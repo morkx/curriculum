@@ -819,3 +819,10 @@ ul.tags li {
 	color: #24555f;
 	border-bottom: 1px dotted currentColor;
 }
+
+/* Experiencia: rango de fechas detallado */
+.timeline .timeline-heading p.dates {
+	margin: -4px 0 8px;
+	font-size: 13px;
+	color: #8a9293;
+}
