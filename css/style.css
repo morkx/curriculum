@@ -85,6 +85,16 @@ h1 {
 	text-transform: uppercase;
 }
 .tagline { color: var(--green); margin: 4px 0 10px; }
+.banner-body { display: flex; align-items: center; gap: 20px; padding-bottom: 8px; }
+.avatar {
+	flex: none;
+	width: 112px;
+	height: auto;
+	image-rendering: pixelated;
+	border: 2px solid var(--green);
+	padding: 3px;
+	background: var(--bg);
+}
 
 /* Menú */
 .menu { margin-bottom: 40px; }
@@ -186,5 +196,7 @@ th, td { text-align: left; vertical-align: top; padding: 0 2.5ch 2px 0; }
 	.banner { padding: 14px 14px 6px; }
 	.banner-top { margin: -14px -14px 14px; padding: 2px 14px; }
 	.out { padding-left: 0; }
+	.banner-body { gap: 14px; align-items: flex-start; }
+	.avatar { width: 72px; }
 	.ls td:nth-child(4) { white-space: normal; min-width: 22ch; }
 }

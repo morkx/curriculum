@@ -11,7 +11,7 @@ con su salida (R, `sacct`, `ls`, `cat`) y al final hay una consola interactiva.
 - `css/style.css`: estilos de terminal.
 - `js/main.js`: atajos de teclado y consola interactiva (sin dependencias).
 - `files/svalenzuela_CV_2026.pdf`: CV descargable.
-- `img/about.jpg`: imagen para la vista previa al compartir el enlace.
+- `img/about.jpg`: avatar en pixel art (también se usa al compartir el enlace).
 
 ## Consola
 
